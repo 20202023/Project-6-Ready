@@ -4,12 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SCSS BASE</title>
+    <script src="https://kit.fontawesome.com/0ae0a65f6f.js" crossorigin="anonymous"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <title>Project 6</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-    
+<body>
+    <div class="container">
+
+        <header class="header">
+
+            <div class="header__inner">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item menu__item--current"><a href="#home" class="menu__link">Home</a></li>
+                        <li class="menu__item"><a href="#prices" class="menu__link">Prices</a></li>
+                        <li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <img class="logo" src="Logo.svg" alt="">
+
+        </header>
+
+            <section id="prices" class="prices">
+
+                <h2>Prices</h2>
+
+                <div class="underline"></div>
+
+                <div class="cards">
+                    <div class="price-info">
+                        <div class="price-box">
+                            <h3>Junior / Senior</h3>
+                            <p class="price-tag">400 kr/month</p>
+                            <button class="btn btn-secondary">Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class="price-info">
+                        <div class="price-box">
+                            <h3>Adult</h3>
+                            <p class="price-tag">499 kr/month</p>
+                            <button class="btn btn-secondary">Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class="price-info">
+                        <div class="price-box">
+                            <h3>Try For Free</h3>
+                            <p class="price-tag"></p>
+                            <button class="btn btn-secondary">Book Time</button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <footer class="footer">
+
+            <div class="footer__content">
+                
+                <section>
+                    <h2 class="section-title"></h2>
+                    
+                    <h3 id="contact" class="contact">Contact</h3>
+                    <div class="underline-contact"></div>
+        
+                    <p>+46 121 121 212</p>
+                    <p>mygym@gmail.com</p>
+        
+                    <p>Solvägen 5</p>
+                    <p>111 22 Åre</p>
+
+                    <div class="icon-box">
+                        <a><i class="fa-brands fa-square-twitter"></i></a>
+                        <a><i class="fa-brands fa-square-facebook"></i></a>
+                        <a><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                    
+                    <p class="copyright">&copy; 2023 MyGym</p>
+        
+                </section>
+        </footer>
+
+    </div>
     
 </body>
 </html>

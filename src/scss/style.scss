@@ -1,5 +1,165 @@
 @use 'utilities/globals';   // Custom Properties
-@use 'base';                // Typography, Reset etc
-@use 'layout';              // Header, Footer etc
-@use 'pages';               // Home, Contact etc
-@use 'vendor';              // Third party styles 
+
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: grayscale;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Roboto', sans-serif;
+    position: absolute;
+    width: 100%;
+    background-color: #f1f1f1
+}
+
+section {
+    scroll-margin-top: 20px;
+}
+
+.header {
+    position: relative;
+    height: 100vh;
+    width: auto;
+    background-image: url(photo3.jpg);
+    background-position: center;
+    background-size: cover;
+
+    img.logo {
+        width: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+
+        .header__inner {
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        }
+      
+        .menu__list {
+        font-size: 24px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        }
+
+        .menu__link {
+        color:  white;
+        font-weight: 700;
+        padding: 0.5rem 1rem 0.6rem;
+        display: block;
+        border: 2px solid transparent;
+        transition: all 0.2s;
+        }
+      
+        a {
+        text-decoration: none;
+        }
+      
+        .menu__link:hover {
+        color: var(--secondary-color);
+        }
+}
+
+h3 {
+    font-size: 32px;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: var(--font-color);
+    font-size: 48px;
+  }
+
+  .underline {
+  margin: 0 auto 40px;
+  width: 160px;
+  height: 4px;
+  background-color: var(--secondary-color);
+}
+
+.cards {
+    text-align: center;
+
+    h3 .price-tag .price-info {
+        color: var(--font-color);
+    }
+
+    .price-tag {
+        font-size: 28px;
+        font-weight: 400;
+    }
+
+    .btn {
+        background-color: var(--secondary-color);
+        border: none;
+        padding: 10px;
+        font-size: 20px;
+          
+        &:hover {
+            background-color: rgb(107, 107, 107);
+            color: white;
+            transition: all 0.2s;
+          }
+    } 
+
+    .price-box {
+        display: inline-block;
+        background-color: var(--accent-color);
+        width: 300px;
+        margin-bottom: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.footer__content {
+    background-color: var(--accent-color);
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+    margin-top:80px;
+
+    .contact {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 16px;
+        margin-top: -8px;
+    }
+
+    .underline-contact{
+        margin: -10px auto 20px;
+        width: 80px;
+        height: 4px;
+        background-color: var(--secondary-color);
+    }
+}
+
+p.copyright {
+    font-size: 12px;
+        margin-top: 20px;
+}
